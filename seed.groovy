@@ -12,3 +12,8 @@ freeStyleJob('example') {
         shell('ls -ltr')
     }
 }
+
+folder('Terraform') {
+    displayName('Terraform')
+    description('Terraform')
+}
