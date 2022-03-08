@@ -14,6 +14,7 @@ pipeline {
         sh 'echo Hello World'
         sh 'echo ${TEST}'
         sh 'echo ${SSH}'
+        sh 'sleep 30'
       }
     }
 
