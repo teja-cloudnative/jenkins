@@ -41,7 +41,7 @@ jobs.each {
           scm {
             git {
               remote {
-                url("https://github.com/teja-cloudnative/jenkins.git")
+                url("https://github.com/teja-cloudnative/terraform-vpc.git")
               }
 
             }
