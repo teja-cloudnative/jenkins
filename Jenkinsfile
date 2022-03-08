@@ -4,6 +4,7 @@ pipeline {
 
   environment {
     TEST="google.com"
+    SSH=credentials('CENTOS_SSH')
   }
 
   stages {
@@ -11,7 +12,8 @@ pipeline {
     stage('Terraform Init') {
       steps {
         sh 'echo Hello World'
-        sh 'echo $TEST'
+        sh 'echo ${TEST}'
+        sh 'echo ${SSH}'
       }
     }
 
