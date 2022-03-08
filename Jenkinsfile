@@ -49,7 +49,29 @@ pipeline {
         sh 'echo Hello World'
       }
     }
-  }
+
+    stage('parallel stages'){
+      parallel{
+
+        stage('One'){
+          steps{
+            sh 'sleep 30'
+          }
+        }
+
+        stage('Two'){
+          steps{
+            sh 'sleep 30'
+            }
+          }
+        stage('Three'){
+          steps{
+            sh 'sleep 30'
+          }
+        }
+      }
+    }
+
 
   post {
     always {
