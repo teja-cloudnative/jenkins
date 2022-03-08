@@ -23,7 +23,8 @@ pipeline {
   }
 
   post {
-    sh 'Hello'
-  }
-
+    always {
+      sh 'echo Hello'
+    }
+ }
 }
