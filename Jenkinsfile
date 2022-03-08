@@ -1,6 +1,6 @@
 // pipeline --> stages --> stage --> steps --> step
 pipeline {
-  agent any
+  agent {label 'terraform'}
   stages {
 
     stage('Terraform Init') {
